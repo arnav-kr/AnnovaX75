@@ -25,7 +25,7 @@ The PCB is designed to be compatible with Cherry MX switches and features hot-sw
 
 | PCB (All Layers)|
 | --- |
-| ![PCB All Layers](/assets/pcb_all.svg) |
+| ![PCB All Layers](/assets/pcb_full.svg) |
 
 | PCB (Front Layer)|
 | --- |
@@ -87,3 +87,9 @@ The case is designed to be 3D printed and features a sandwich mount design with 
 | PCB                                | 1        |             | https://jlcpcb.com/                                                                                                            |
 
 Cost is as of 06/09/2025
+
+## Author
+[Arnav Kumar](https://github.com/arnav-kr)
+
+## License
+This project is licensed under the [AGPL-3.0 License](LICENSE).
