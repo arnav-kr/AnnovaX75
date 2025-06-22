@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth selection:bg-blue-600 selection:text-white">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annova X75</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style type="text/tailwindcss">
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @import "tailwindcss";
+    body {
+      font-family: 'Space Mono', monospace;
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+      font-variation-settings: "opsz" 32;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-neutral-950 text-neutral-50 bg-[url(assets/background.png)] bg-cover bg-center bg-no-repeat min-h-screen bg-fixed backdrop-blur-3xl">
+  <nav
+    class="group relative font-bold text-normal border-b border-t border-neutral-800 p-4 px-8 flex justify-between items-center sticky top-4 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 md:before:h-18 has-[:checked]:before:h-56 before:h-18 before:backdrop-blur-lg before:-z-10 z-50">
+    <img src="assets/A75.svg" class="size-10" alt="">
+    <div class="w-full"></div>
+    <a href="https://github.com/arnav-kr/AnnovaX75" class="md:hidden mr-2"><svg role="img" viewBox="0 0 24 24"
+        class="size-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+        <title>GitHub</title>
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+      </svg></a>
+    <label for="menu-toggle" class="md:hidden cursor-pointer group/menu hover:bg-white p-1">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+        class="size-6 fill-current group-hover/menu:fill-neutral-950 block group-has-checked:hidden">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+        class="size-6 fill-current group-hover/menu:fill-neutral-950 hidden group-has-checked:block">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+      </svg>
+    </label>
+    <input type="checkbox" id="menu-toggle" title="Toggle Sidebar Menu" class="sr-only md:hidden peer">
+    <ul
+      class="hidden md:flex flex-col md:flex-row space-y-2 md:space-x-4 md:items-center peer-checked:flex absolute left-0 top-[100%] border-t border-b md:border-none border-neutral-800 md:static w-full md:w-auto p-4 md:p-0 z-50">
+      <li><a href="#highlights" class="hover:bg-white hover:text-neutral-950 px-2">Highlights</a></li>
+      <li><a href="#images" class="hover:bg-white hover:text-neutral-950 px-2">Images</a></li>
+      <li><a href="#bom" class="hover:bg-white hover:text-neutral-950 px-2">BOM</a></li>
+      <li class="hidden md:block"><a href="https://github.com/arnav-kr/AnnovaX75" rel="noopener noreferrer"
+          target="_blank"><svg role="img" viewBox="0 0 24 24" class="size-6 fill-current"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>GitHub</title>
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg></a></li>
+      <li class="md:hidden"><a href="https://github.com/arnav-kr/AnnovaX75" rel="noopener noreferrer" target="_blank"
+          class="hover:bg-white hover:text-neutral-950 px-2">
+          <span>GitHub</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            class="size-3.5 mb-[2.5px] -ml-1.5 inline-block stroke-current">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+
+        </a></li>
+    </ul>
+  </nav>
+  <main class="pt-8">
+    <!-- hero -->
+    <section
+      class="flex flex-col items-center justify-around relative bg-[url(assets/0.png)] bg-right bg-size-[650px] lg:bg-size-[1024px] bg-no-repeat h-[calc(100dvh-106px)] md:bg-center">
+      <div>
+        <h1 class="text-4xl font-bold text-center mt-8">Annova X75</h1>
+        <p class="text-center mt-2 text-lg">A Custom Made 75% Mechanical Keyboard From Scratch</p>
+      </div>
+      <button class="mt-4 md:mt-32 lg:mt-40 hover:scale-105 transition-all duration-150 ease-in-out">
+        <a href="#features"
+          class="flex items-center justify-center items-center gap-1 bg-neutral-50 font-bold text-neutral-950 px-4 py-2 rounded-full">
+          <span>Visit Build Guide</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            class="size-5 fill-current">
+            <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+          </svg>
+        </a>
+      </button>
+    </section>
+    <!-- highlights -->
+    <section id="highlights"
+      class="scroll-mt-[96px] flex flex-col justify-left p-8 lg:px-32 items-start mt-8 min-h-[calc(100dvh-156px)]">
+      <h2 class="text-3xl font-bold mb-8">Highlights</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:place-content-center gap-5 lg:gap-8">
+        <div
+          class="md:min-h-50 lg:self-stretch border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="100" height="100" class="size-8 stroke-current" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="53.6981" width="26.6038" height="26.6038" rx="4" stroke-width="4" />
+              <rect x="36.6981" y="53.6981" width="26.6038" height="26.6038" rx="4" stroke-width="4" />
+              <path
+                d="M70.3962 57.6981C70.3962 55.489 72.1871 53.6981 74.3962 53.6981H93C95.2091 53.6981 97 55.489 97 57.6981V76.3019C97 78.511 95.2091 80.3019 93 80.3019H74.3962C72.1871 80.3019 70.3962 78.511 70.3962 76.3019V57.6981Z"
+                stroke-width="4" />
+              <rect x="36.6981" y="20" width="26.6038" height="26.6038" rx="4" stroke-width="4" />
+            </svg>
+
+            <h3 class="font-bold text-lg">75% Exploded Layout</h3>
+          </div>
+          <p>The most compact layout, providing a perfect balance between functionality and space-saving design.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="100" height="100" class="size-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28.364 75.1456C27.2398 89.4616 39.3061 101.311 53.5582 99.883C67.8103 98.4546 77.3013 84.4395 73.3687 70.6267L73.109 70.4874C71.3487 69.5576 69.6243 68.5694 67.9447 67.5048C66.3099 66.4671 64.7154 65.3666 63.1746 64.1942C62.0459 63.3272 60.9441 62.4243 59.8781 61.4765C58.4627 60.2187 57.119 58.8846 55.8559 57.4786C53.7972 62.9628 49.9923 67.6128 45.0307 70.7078C40.0692 73.8029 34.2283 75.1701 28.4133 74.5976L28.364 75.1456Z"
+                class="fill-current" />
+              <path
+                d="M61.8488 16.2691C65.4815 25.8949 69.3058 35.4467 73.3195 44.919C73.4762 45.2874 73.6285 45.6557 73.7897 46.0196L74.0227 46.5721L74.0495 46.6395C74.0719 46.6934 74.0047 46.6799 73.9734 46.6844C73.6757 46.742 73.3675 46.7034 73.0931 46.5743C72.8187 46.4451 72.5921 46.2321 72.4461 45.9657L71.8951 44.9235C69.0558 39.6041 66.3511 34.2135 63.7837 28.7569C61.7427 24.403 59.7984 20.0043 57.9521 15.5639L57.0249 13.3089L56.5636 12.1679C56.4337 11.8355 55.9993 11.1168 56.2008 10.6721C56.3038 10.4385 56.4875 10.2678 56.6263 10.0612C56.9613 9.56583 57.2223 9.02407 57.4012 8.45307C57.7063 7.51029 57.7909 6.50975 57.6486 5.5289C57.5063 4.54805 57.1408 3.61321 56.5804 2.79674C56.0201 1.98027 55.2799 1.30408 54.4172 0.82051C53.5545 0.336944 52.5924 0.0589793 51.6054 0.00812936C50.5644 -0.0442598 49.5262 0.15716 48.5798 0.595143C47.6334 1.03313 46.8069 1.69462 46.1712 2.52299C45.5354 3.35136 45.1093 4.32191 44.9293 5.35155C44.7493 6.3812 44.8208 7.43924 45.1377 8.4351C45.3079 8.97863 44.9541 9.20772 44.6719 9.54013C41.0001 13.7686 37.8717 18.4423 35.3601 23.4518L34.966 24.2514L34.7734 24.6512C34.5629 25.0959 34.2941 25.2486 33.8059 25.1902C28.7487 24.5642 23.6275 25.6435 19.2493 28.2582C15.5684 30.4505 12.5711 33.6301 10.5951 37.4388C8.6191 41.2476 7.74291 45.534 8.06527 49.8153C8.39763 54.3107 10.0381 58.6094 12.7833 62.1786C15.5285 65.7478 19.2577 68.4306 23.5088 69.8945C27.8043 71.3806 32.4427 71.5563 36.8378 70.3994C41.2328 69.2425 45.1873 66.8049 48.2014 63.3946C50.6032 60.682 52.3331 57.4393 53.2504 53.9302C54.1678 50.421 54.2467 46.7443 53.4808 43.1988C52.7149 39.6533 51.1259 36.339 48.8427 33.5252C46.5595 30.7114 43.6466 28.4775 40.3408 27.005C39.9959 26.8523 39.8615 26.6591 39.8973 26.2773C39.9128 26.1623 39.9492 26.0511 40.0048 25.9494L40.4796 25.0195L41.2724 23.5506C43.374 19.7729 45.8597 16.2233 48.6896 12.9585C49.0345 12.5587 49.3793 12.6576 49.8093 12.7564C49.9706 12.7968 50.1363 12.8283 50.302 12.8552C50.5573 12.8912 50.8171 12.8552 51.0679 12.9945C51.3994 13.1786 51.6143 13.8659 51.7398 14.1444L52.1832 15.1282L52.6266 16.1074L52.855 16.597C52.9429 16.7572 52.9745 16.9423 52.9446 17.1226C52.9267 17.199 52.8953 17.2708 52.864 17.3427C52.7341 17.6257 52.6132 17.9132 52.4922 18.2007C51.3223 20.9544 50.463 23.8307 49.9303 26.7759C49.8295 27.3409 49.7444 27.9086 49.6749 28.4784L49.6212 28.9051L49.6122 29.0129C49.6122 29.0309 49.5809 29.0488 49.6033 29.0758H49.6122L49.6212 29.0893C49.6391 29.1072 49.6526 29.1252 49.6749 29.1387L49.8765 29.3408L50.2751 29.7541C51.8827 31.459 53.2606 33.3678 54.3734 35.4319C55.8849 38.2129 56.879 41.2465 57.3071 44.3845C57.6679 47.0184 57.6408 49.6913 57.2265 52.3173L57.1324 52.8564L57.0832 53.1214C56.9085 54.0153 57.6923 54.168 58.0999 54.6307C61.5801 58.6331 65.5484 61.7909 70.014 64.5895C75.4604 68.0123 81.1801 70.5863 87.2177 72.7289C87.7407 72.9148 88.2647 73.0974 88.7898 73.277C88.8078 73.2815 88.8346 73.3264 88.8436 73.2904L88.8481 73.2814L88.857 73.2455C88.8603 73.221 88.8664 73.1969 88.8749 73.1736L88.9018 73.0254L88.9735 72.7289C89.2325 71.5718 89.4684 70.4097 89.6812 69.2432C89.9589 67.7338 90.1962 66.22 90.3933 64.6928C90.7606 61.7999 90.9756 58.9116 90.998 55.9918C91.0652 47.3896 89.4751 38.3652 84.5438 30.931C79.0973 22.7151 70.9949 18.4657 61.8488 16.2691Z"
+                class="fill-current" />
+            </svg>
+            <h3 class="font-bold text-lg">Cherry MX Brown Switches</h3>
+          </div>
+          <p>Experience the perfect blend of tactile feedback and quiet operation with Cherry MX Brown switches.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-6 fill-current" height="24px" viewBox="0 -960 960 960"
+              width="24px">
+              <path
+                d="M320-440v-287L217-624l-57-56 200-200 200 200-57 56-103-103v287h-80ZM600-80 400-280l57-56 103 103v-287h80v287l103-103 57 56L600-80Z" />
+            </svg>
+            <h3 class="font-bold text-lg">Hot-swappable Sockets</h3>
+          </div>
+          <p>Customize your typing experience on the fly with hot-swappable sockets for easy switch replacement.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-6 fill-current" height="24px" viewBox="0 -960 960 960"
+              width="24px">
+              <path
+                d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+            </svg>
+            <h3 class="font-bold text-lg">Minimalist Sleek Design</h3>
+          </div>
+          <p>Designed to fit seamlessly into any workspace, combining aesthetics with functionality.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="20" height="20" class="size-5" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_10_115)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11 0V7.95001H9V0C3.96488 0.505829 0 4.78738 0 9.95001C0 15.45 4.5 19.95 10 19.95C15.5 19.95 20 15.45 20 9.95001C20 4.78738 16.0351 0.505829 11 0Z" class="fill-current" />
+              </g>
+              <defs>
+                <clipPath id="clip0_10_115">
+                  <rect width="20" height="20" class="fill-current" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="font-bold text-lg">Customizable Knob</h3>
+          </div>
+          <p>Enhance your productivity with a customizable knob that can be programmed for various functions.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              class="size-6 fill-current">
+              <path
+                d="M200-120q-17 0-28.5-11.5T160-160v-40h-40v-160q0-17 11.5-28.5T160-400h40v-280q0-66 47-113t113-47q66 0 113 47t47 113v400q0 33 23.5 56.5T600-200q33 0 56.5-23.5T680-280v-280h-40q-17 0-28.5-11.5T600-600v-160h40v-40q0-17 11.5-28.5T680-840h80q17 0 28.5 11.5T800-800v40h40v160q0 17-11.5 28.5T800-560h-40v280q0 66-47 113t-113 47q-66 0-113-47t-47-113v-400q0-33-23.5-56.5T360-760q-33 0-56.5 23.5T280-680v280h40q17 0 28.5 11.5T360-360v160h-40v40q0 17-11.5 28.5T280-120h-80Z" />
+            </svg>
+            <h3 class="font-bold text-lg mb-1">Side mount USB-C Port</h3>
+          </div>
+          <p>Conveniently located USB-C port for easy connectivity and cable management.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="100" height="100" class="size-5 -mr-1" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.84615 84C1.72198 84 0 82.2742 0 80.1454C0 78.0165 1.72198 76.2907 3.84615 76.2907H100V84H3.84615Z"
+                class="fill-current" />
+              <path
+                d="M6.56581 82.5922C5.0638 84.0975 2.62855 84.0975 1.12653 82.5922C-0.375485 81.0869 -0.375485 78.6463 1.12653 77.1409L69.1176 9L74.5568 14.4513L6.56581 82.5922Z"
+                class="fill-current" />
+              <path
+                d="M38.5216 45.3935C47.7181 54.6103 52.8846 67.1109 52.8846 80.1454H45.0427C45.0427 69.1953 40.7024 58.6937 32.9765 50.9508L38.5216 45.3935Z"
+                class="fill-current" />
+            </svg>
+
+            <h3 class="font-bold text-lg mb-1">6° Typing Angle</h3>
+          </div>
+          <p>Ergonomically designed with a 6° typing angle for comfortable and natural hand positioning.</p>
+        </div>
+        <div
+          class="md:min-h-50 border border-neutral-300 hover:border-neutral-50 hover:scale-102 transition-all duration-150 ease p-4 py-6 rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="100" height="100" class="size-6 mb-0.5" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M100 26V37H0V26C0 23.7909 1.79086 22 4 22H10V24H14V22H86V24H90V22H96C98.2091 22 100 23.7909 100 26Z"
+                class="fill-current" />
+              <path
+                d="M0 53H100V74C100 76.2091 98.2091 78 96 78H90V76H86V78H14V76H10V78H4C1.79086 78 0 76.2091 0 74V53Z"
+                class="fill-current" />
+            </svg>
+
+            <h3 class="font-bold text-lg mb-1">Sandwich Mount</h3>
+          </div>
+          <p>Ensures a stable and responsive typing experience with a sandwich mount design.</p>
+        </div>
+      </div>
+    </section>
+    <!-- images -->
+    <section id="images"
+      class="scroll-mt-[96px] px-8 lg:px-32 flex flex-col justify-left py-8 items-start mt-8 min-h-[calc(100dvh-156px)]">
+      <h2 class="text-3xl font-bold mb-8">Images</h2>
+      <div class=" grid lg:grid-cols-3 md:grid-cols-2 relative w-full gap-6">
+        <a href="assets/0.png" aria-label="Fullly Assembled Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/0.png" alt="Fullly Assembled" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Fully Assembled</figcaption>
+          </figure>
+        </a>
+        <a href="assets/1.png" aria-label="PCB Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/1.png" alt="Just the Case" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Just the Case</figcaption>
+          </figure>
+        </a>
+        <a href="assets/2.png" aria-label="PCB Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/2.png" alt="Top Case" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Top Case</figcaption>
+          </figure>
+        </a>
+        <a href="assets/3.png" aria-label="Plate Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/3.png" alt="Plate" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Plate</figcaption>
+          </figure>
+        </a>
+        <a href="assets/4.png" aria-label="Bottom Case Flipped Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/4.png" alt="Bottom Case Flipped" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Bottom Case Flipped</figcaption>
+          </figure>
+        </a>
+        <a href="assets/5.png" aria-label="Bottom Case Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/5.png" alt="Bottom Case" class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Bottom Case</figcaption>
+          </figure>
+        </a>
+        <a href="assets/pcb_back_render.png" aria-label="PCB Render Back Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/pcb_back_render.png" alt="PCB Render Back"
+              class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">PCB Render Back</figcaption>
+          </figure>
+        </a>
+        <a href="assets/pcb_front_render.png" aria-label="PCB Render Front Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/pcb_front_render.png" alt="PCB Render Front"
+              class="w-auto bg-neutral-800 object-fit rounded-lg">
+            <figcaption class="text-center text-sm mt-2">PCB Render Front</figcaption>
+          </figure>
+        </a>
+        <a href="assets/pcb_full.svg" aria-label="PCB Render All Layers Image Link" class="self-center">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/pcb_full.svg" alt="PCB All Layers"
+              class="w-auto bg-neutral-800 object-fit h-full rounded-lg">
+            <figcaption class="text-center text-sm mt-2">PCB All Layers</figcaption>
+          </figure>
+        </a>
+        <a href="assets/pcb_front.svg" class="my-4 self-center" aria-label="PCB Schematic Image Link">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/pcb_front.svg" alt="PCB Front" class="w-auto bg-neutral-800 object-fit h-full rounded-lg">
+            <figcaption class="text-center text-sm mt-2">PCB Front</figcaption>
+          </figure>
+        </a>
+        <a href="assets/pcb_back.svg" class="my-4 self-center" aria-label="PCB Back Image Link">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/pcb_back.svg" alt="PCB Back" class="w-auto bg-neutral-800 object-fit h-full rounded-lg">
+            <figcaption class="text-center text-sm mt-2">PCB Back</figcaption>
+          </figure>
+        </a>
+        <a href="assets/schematics.svg" class="my-4 self-center" aria-label="Schematics Image Link">
+          <figure class="hover:scale-105 transition-all duration-200 ease">
+            <img src="assets/schematics.svg" alt="Schematics"
+              class="w-autobg-neutral-100 object-fit h-full rounded-lg">
+            <figcaption class="text-center text-sm mt-2">Schematics</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+    <!-- bom -->
+    <section id="bom"
+      class="scroll-mt-[96px] px-8 lg:px-32 flex flex-col justify-left py-8 items-start mt-8 min-h-[calc(100dvh-156px)]">
+      <h2 class="text-3xl font-bold mb-8">Bill of Materials</h2>
+      <div class="overflow-x-auto w-full">
+        <table class="w-full text-left border border-collapse border-neutral-800 w-content backdrop-blur-3xl">
+          <thead>
+            <tr class="text-neutral-50 border border-neutral-800">
+              <th class="p-2">Item</th>
+              <th class="p-2">Quantity</th>
+              <th class="p-2">Cost</th>
+              <th class="p-2">Purchase Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">1N4148 Diodes</td>
+              <td class="p-2 border border-neutral-800">90 Pack</td>
+              <td class="p-2 border border-neutral-800">&dollar;1.57</td>
+              <td class="p-2 border border-neutral-800"><a href="https://stackskb.com/store/1n4148-through-hole-diode/"
+                  class="text-blue-400 hover:underline">1N4148 Diodes</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Cherry MX Brown Switches</td>
+              <td class="p-2 border border-neutral-800">90 Pack</td>
+              <td class="p-2 border border-neutral-800">&dollar;35.14</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://neomacro.in/products/cherry-mx-switches?_psq=cherry+brown&variant=47150319141142"
+                  class="text-blue-400 hover:underline">Cherry MX Brown Switches</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">EC11 Rotary Encoder</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">&dollar;0.43</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm"
+                  class="text-blue-400 hover:underline">EC11 Rotary Encoder</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Orpheus Pico</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">-</td>
+              <td class="p-2 border border-neutral-800"><a href="https://hackclub.com/parts/orpheus_pico/"
+                  class="text-blue-400 hover:underline">Orpheus Pico</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Kailh MX Hotswap Socket v1</td>
+              <td class="p-2 border border-neutral-800">90 Pack</td>
+              <td class="p-2 border border-neutral-800">&dollar;11.54</td>
+              <td class="p-2 border border-neutral-800"><a href="https://neomacro.in/products/kailh-mx-hotswap-socket"
+                  class="text-blue-400 hover:underline">Kailh MX Hotswap Socket v1</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Durock v2 Stabilizers Set</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">&dollar;18.59</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://stackskb.com/store/durock-clear-screw-in-stabilizers-v2/?attribute_combination=4%2B1+Set&attribute_spacebar-size=6.25U"
+                  class="text-blue-400 hover:underline">Durock v2 Stabilizers Set</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Keycap Set</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">~&dollar;30</td>
+              <td class="p-2 border border-neutral-800"><a href="#" class="text-blue-400 hover:underline">Keycap Set</a>
+              </td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Socket Head M3x12 Screws</td>
+              <td class="p-2 border border-neutral-800">3</td>
+              <td class="p-2 border border-neutral-800">&dollar;0.117</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://onlyscrews.in/products/hex-allen-socket-head-m3-x-12-screw-pack-of-20"
+                  class="text-blue-400 hover:underline">Socket Head M3x12 Screws</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Socket Head M3x25 Screws</td>
+              <td class="p-2 border border-neutral-800">3</td>
+              <td class="p-2 border border-neutral-800">&dollar;0.138</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://onlyscrews.in/products/m3-x-25mm-hex-allen-socket-head-ss-304-screw"
+                  class="text-blue-400 hover:underline">Socket Head M3x25 Screws</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">M3 X 4mm Brass Threaded Inserts</td>
+              <td class="p-2 border border-neutral-800">6</td>
+              <td class="p-2 border border-neutral-800">&dollar;0.15</td>
+              <td class="p-2 border border-neutral-800"><a
+                  href="https://onlyscrews.in/products/m4-x-4mm-brass-threaded-inserts"
+                  class="text-blue-400 hover:underline">M3 X 4mm Brass Threaded Inserts</a></td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">Bottom Case, Top Case, Plate, Knob</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">-</td>
+              <td class="p-2 border border-neutral-800">3D Printed</td>
+            </tr>
+            <tr class="border border-neutral-800">
+              <td class="p-2 border border-neutral-800">PCB</td>
+              <td class="p-2 border border-neutral-800">1</td>
+              <td class="p-2 border border-neutral-800">&dollar;22.10</td>
+              <td class="p-2 border border-neutral-800"><a href="https://jlcpcb.com/"
+                  class="text-blue-400 hover:underline">JLCPCB</a></td>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer
+    class="border-t border-neutral-800 p-6 py-4 gap-2 flex flex-col sm:flex-row justify-center sm:justify-between backdrop-blur-lg">
+    <section class="flex items-center gap-4">
+      <img src="assets/A75.svg" class="size-8" alt="Annova X75" class="w-full h-auto object-cover object-center">
+      <span class="text-2xl font-bold">Annova X75</span>
+    </section>
+    <p class="text-lg">A product by <a href="https://github.com/arnav-kr" rel="noopener noreferrer" target="_blank"
+        class="font-bold px-1 before:content-[''] relative before:absolute before:inline-block before:w-full before:h-1 before:bg-neutral-50 before:top-6 hover:before:h-7 hover:before:top-0 hover:text-neutral-950 before:left-0 before:-z-1 z-1 before:transition-all before:duration-100 before:ease">Arnav</a>
+    </p>
+  </footer>
+</body>
+
+</html></button>

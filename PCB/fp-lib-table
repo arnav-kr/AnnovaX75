@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Keyboard_Components")(type "KiCad")(uri "${KIPRJMOD}/footprints/Keyboard_Components.pretty")(options "")(descr ""))
-  (lib (name "Switch_MX_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/footprints/Switch_MX_Hotswap.pretty")(options "")(descr ""))
-)
