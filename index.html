@@ -60,9 +60,9 @@
 </head>
 
 <body
-  class="bg-neutral-950 text-neutral-50 bg-[url(assets/background.webp)] bg-cover bg-center bg-no-repeat min-h-screen bg-fixed backdrop-blur-3xl">
+  class="bg-neutral-950 text-neutral-50 bg-[url(assets/background.webp)] bg-cover bg-center bg-no-repeat min-h-screen bg-fixed relative before:content-[''] before:absolute before:w-screen before:h-full before:inset-0 before:-z-1 before:backdrop-blur-3xl">
   <nav
-    class="group relative font-bold text-normal border-b border-t border-neutral-800 p-4 px-8 flex justify-between items-center sticky top-4 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 md:before:h-18 has-[:checked]:before:h-56.5 before:h-18 before:backdrop-blur-lg before:bg-neutral-950/70 before:-z-10 z-50">
+    class="group relative font-bold text-normal border-b border-t border-neutral-800 p-4 px-8 flex justify-between items-center sticky top-4 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 md:before:h-18 has-[:checked]:before:h-56.5 before:h-18 before:backdrop-blur-lg before:-z-1 before:-z-10 z-50">
     <img src="assets/A75.svg" class="size-10" alt="">
     <div class="w-full"></div>
     <a href="https://github.com/arnav-kr/AnnovaX75" class="md:hidden mr-2"><svg role="img" viewBox="0 0 24 24"
@@ -344,7 +344,7 @@
       class="scroll-mt-[96px] px-8 lg:px-32 flex flex-col justify-left py-8 items-start mt-8 min-h-[calc(100dvh-156px)]">
       <h2 class="text-3xl font-bold mb-8">Bill of Materials</h2>
       <div class="overflow-x-auto w-full">
-        <table class="w-full text-left border border-collapse border-neutral-800 w-content bg-neutral-950/20 backdrop-blur-3xl">
+        <table class="w-full text-left border border-collapse border-neutral-800 w-content backdrop-blur-3xl">
           <thead>
             <tr class="text-neutral-50 border border-neutral-800">
               <th class="p-2">Item</th>
@@ -449,7 +449,7 @@
     </section>
   </main>
   <footer
-    class="border-t border-neutral-800 p-6 py-4 gap-2 flex flex-col sm:flex-row justify-center sm:justify-between bg-neutral-950/20 backdrop-blur-lg">
+    class="border-t border-neutral-800 p-6 py-4 gap-2 flex flex-col sm:flex-row justify-center sm:justify-between backdrop-blur-lg">
     <section class="flex items-center gap-4">
       <img src="assets/A75.svg" class="size-8" alt="Annova X75" class="w-full h-auto object-cover object-center">
       <span class="text-2xl font-bold">Annova X75</span>
