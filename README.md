@@ -7,6 +7,7 @@ A 75% Mechanical Keyboard, custom built from scratch.
 ## Features
 - 75% Exploded Layout
 - Cherry MX Brown Switches
+- QMK + VIA Firmware Support
 - Hot-swappable Sockets
 - Minimalist Sleek Design
 - Customizable Knob
@@ -84,6 +85,7 @@ The case is designed to be 3D printed and features a sandwich mount design with 
 | Socket Head M3x25 Screws           | 3        |             | https://onlyscrews.in/products/m3-x-25mm-hex-allen-socket-head-ss-304-screw                                                    |
 | M3 X 4mm Brass Threaded Inserts    | 6        |             | https://onlyscrews.in/products/m4-x-4mm-brass-threaded-inserts                                                                 |
 | Bottom Case, Top Case, Plate, Knob | 1        |             | (3D Printed)                                                                                                                   |
+| Bottom Rubber Feet              | 4        | 2.21        | https://www.amazon.in/Miramar-Adhesive-Non-Slip-Furniture-Hemispherical/dp/B0BLN4TCPT                                                                          |
 | PCB                                | 1        |             | https://jlcpcb.com/                                                                                                            |
 
 Cost is as of 06/09/2025
