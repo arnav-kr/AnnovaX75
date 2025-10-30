@@ -81,12 +81,14 @@ The case is designed to be 3D printed and features a sandwich mount design with 
 | Kailh MX Hotswap Socket v1         | 90 Pack  | 11.16       | https://neomacro.in/products/kailh-mx-hotswap-socket                                                                           |
 | Durock v2 Stabilizers Set          | 1        | 17.98       | https://stackskb.com/store/durock-clear-screw-in-stabilizers-v2/?attribute_combination=4%2B1+Set&attribute_spacebar-size=6.25U |
 | Keycap Set                         | 1        | 29.20            | https://curiositycaps.in/products/black-red-cherry-doubleshot-216-pbt-keycaps-with-storage-box                                                                                                                          |
-| Socket Head M3x12 Screws           | 3        |             | https://onlyscrews.in/products/hex-allen-socket-head-m3-x-12-screw-pack-of-20                                                  |
-| Socket Head M3x25 Screws           | 3        |             | https://onlyscrews.in/products/m3-x-25mm-hex-allen-socket-head-ss-304-screw                                                    |
-| M3 X 4mm Brass Threaded Inserts    | 6        |             | https://onlyscrews.in/products/m4-x-4mm-brass-threaded-inserts                                                                 |
-| Bottom Case, Top Case, Plate, Knob | 1        |             | (3D Printed)                                                                                                                   |
-| Bottom Rubber Feet              | 4        | 2.13        | https://www.amazon.in/Miramar-Adhesive-Non-Slip-Furniture-Hemispherical/dp/B0BLN4TCPT                                                                          |
-| PCB                                | 1        |             | https://jlcpcb.com/                                                                                                            |
+| Socket Head M3x12 Screws           | 3        | 0.3         | https://onlyscrews.in/products/hex-allen-socket-head-m3-x-12-screw-pack-of-20                                                  |
+| Socket Head M3x25 Screws           | 3        | 0.3         | https://onlyscrews.in/products/m3-x-25mm-hex-allen-socket-head-ss-304-screw                                                    |
+| M3 X 4mm Brass Threaded Inserts    | 6        | 0.3         | https://onlyscrews.in/products/m4-x-4mm-brass-threaded-inserts                                                                 |
+| Bottom Case, Top Case, Plate, Knob | 1        | -           | (3D Printed)                                                                                                                   |
+| Bottom Rubber Feet                 | 4        | 2.13        | https://www.amazon.in/Miramar-Adhesive-Non-Slip-Furniture-Hemispherical/dp/B0BLN4TCPT                                                                          |
+| PCB                                | 1        | 22.1        | https://jlcpcb.com/                                                                                                            |
+
+for detailed bom check out [BOM.csv](BOM.csv)
 
 Cost is as of 30/10/2025
 
