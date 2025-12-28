@@ -75,22 +75,22 @@ The case is designed to be 3D printed and features a sandwich mount design with 
 | Item                               | Quantity | Cost (USD)* | Purchase Link                                                                                                                  |
 | ---------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | 1N4148 Diodes                      | 90 Pack  | 1.52        | https://stackskb.com/store/1n4148-through-hole-diode/                                                                          |
-| Cherry MX Brown Switches           | 90 Pack  | 34       | https://neomacro.in/products/cherry-mx-switches?_psq=cherry+brown&variant=47150319141142                                       |
+| Akko Bittersweet Switch            | 90 Pack  | 34          | https://stackskb.com/store/akko-bittersweet-switch-pack-of-45/                                       |
 | EC11 Rotary Encoder                | 1        | 0.43        | https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm                                                |
 | Orpheus Pico                       | 1        | -           | Hack Club                                                                                                                      |
-| Kailh MX Hotswap Socket v1         | 90 Pack  | 11.16       | https://neomacro.in/products/kailh-mx-hotswap-socket                                                                           |
+| Gateron Hotswap Sockets            | 90 Pack  | 11.16       | https://stackskb.com/store/gateron-hotswap-sockets/                                                                           |
 | Durock v2 Stabilizers Set          | 1        | 17.98       | https://stackskb.com/store/durock-clear-screw-in-stabilizers-v2/?attribute_combination=4%2B1+Set&attribute_spacebar-size=6.25U |
-| Keycap Set                         | 1        | 22.57       | https://curiositycaps.in/products/apollo-inspired-quality-cherry-doubleshot-pbt-keycaps?variant=51076299850009                                                                                                                          |
+| Keycap Set                         | 1        | 22.29       | https://curiositycaps.in/products/apollo-inspired-quality-cherry-doubleshot-pbt-keycaps?variant=51076299850009                                                                                                                          |
 | Socket Head M3x12 Screws           | 3        | 0.3         | https://onlyscrews.in/products/hex-allen-socket-head-m3-x-12-screw-pack-of-20                                                  |
 | Socket Head M3x25 Screws           | 3        | 0.3         | https://onlyscrews.in/products/m3-x-25mm-hex-allen-socket-head-ss-304-screw                                                    |
 | M3 X 4mm Brass Threaded Inserts    | 6        | 0.3         | https://onlyscrews.in/products/m4-x-4mm-brass-threaded-inserts                                                                 |
 | Bottom Case, Top Case, Plate, Knob | 1        | -           | (3D Printed)                                                                                                                   |
 | Bottom Rubber Feet                 | 4        | 2.13        | https://www.amazon.in/Miramar-Adhesive-Non-Slip-Furniture-Hemispherical/dp/B0BLN4TCPT                                                                          |
-| PCB                                | 1        | 22.1        | https://jlcpcb.com/                                                                                                            |
+| PCB                                | 1        | 58.2        | https://pcbpower.com                                                                                                            |
 
 for detailed bom check out [BOM.csv](BOM.csv)
 
-Cost is as of 30/10/2025
+Cost is as of 28/12/2025
 
 ## Author
 [Arnav Kumar](https://github.com/arnav-kr)
