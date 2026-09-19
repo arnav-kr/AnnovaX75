@@ -1,53 +1,76 @@
-# RMK 
+# Annova X75 RMK Firmware (Vial Enabled)
 
-RMK is a feature-rich and easy-to-use keyboard firmware.
+Firmware for the **Annova X75** mechanical keyboard built with [RMK](https://rmk.rs) (Rust Keyboard Firmware) and [Vial](https://get.vial.today) support.
 
-## Use the template
+## Hardware Specifications
 
-1. Install [probe-rs](https://github.com/probe-rs/probe-rs)
+- **MCU**: Raspberry Pi RP2040
+- **Matrix**: 6 rows × 15 columns (COL2ROW)
+  - Rows: `GP17`, `GP18`, `GP19`, `GP20`, `GP21`, `GP22` (`PIN_17` to `PIN_22`)
+  - Columns: `GP0`, `GP1`, `GP15`, `GP14`, `GP13`, `GP12`, `GP11`, `GP10`, `GP9`, `GP8`, `GP7`, `GP6`, `GP5`, `GP4`, `GP3`
+- **Rotary Encoder (EC11)**:
+  - Pin A: `GP2` (`PIN_2`)
+  - Pin B: `GP16` (`PIN_16`)
+  - Push Button: Matrix `(0, 14)` (Row 0, Col 14)
+  - Internal Pull-up: Enabled
+  - Default Action: CCW = Volume Down, CW = Volume Up, Press = Mute
+- **Bootloader / Bootmagic**:
+  - Hold `Escape` (`(0, 0)`) during plug-in to enter RP2040 BOOTSEL mode.
+  - Or press the physical RESET button on the back of the PCB.
 
-   ```shell
-   # Linux/macOS
-   curl --proto '=https' --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
+## Vial Support
 
-   # Windows
-   irm https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.ps1 | iex
-   ```
+- Real-time on-the-fly keymap and rotary encoder remapping via the [Vial Web App](https://vial.rocks) or Vial desktop application.
+- `vial.json` is embedded directly into the firmware binary (`build.rs`). No sideloading required.
+- **Layers**: 4 layers enabled with persistent flash storage.
+- **Unlock Combination**: Press `Escape` + `F1` (`(0, 0)` and `(0, 1)`) simultaneously to unlock secure features in Vial (matrix tester, etc.).
 
-2. Build the firmware
+## Building the Firmware
 
-   ```shell
-   cargo build --release
-   ```
+Ensure you have Rust and the `thumbv6m-none-eabi` target installed:
 
-3. Flash using debug probe
+```bash
+rustup target add thumbv6m-none-eabi
+```
 
-   If you have a debug probe connected to your rp2040 board, flashing is quite simple: run the following command to automatically compile and flash RMK firmware to the board:
+### Build Release Binary
 
-   ```shell
+```bash
+cargo build --release
+```
+
+### Generate `.uf2` file
+
+Using `elf2uf2-rs`:
+
+```bash
+cargo install elf2uf2-rs
+elf2uf2-rs target/thumbv6m-none-eabi/release/AnnovaX75 AnnovaX75.uf2
+```
+
+## Flashing the Keyboard
+
+### Method 1: One-step USB Flash & Autoboot (Recommended)
+`runner = "elf2uf2-rs -d"` is enabled by default in `.cargo/config.toml`.
+1. Put the keyboard in BOOTSEL mode (hold `Escape` while plugging in, or press the button on the back of the PCB).
+2. Run:
+   ```bash
    cargo run --release
    ```
+   `elf2uf2-rs` will detect the mounted Pico disk, flash the firmware, and **autoboot** the keyboard immediately.
 
-4. (Optional) Flash using USB
+### Method 2: Manual Drag and Drop
+1. Build the `.uf2` file:
+   ```bash
+   cargo build --release
+   elf2uf2-rs target/thumbv6m-none-eabi/release/AnnovaX75 AnnovaX75.uf2
+   ```
+2. Hold down `Escape` while plugging in the keyboard.
+3. Drag and drop `AnnovaX75.uf2` onto the mounted `RPI-RP2` drive. The board will autoboot.
 
-   If you don't have a debug probe, you can use `elf2uf2-rs` to flash your rp2040 firmware via USB. There are several additional steps you have to do:
+### Method 3: Debug Probe (probe-rs)
+If using a Picoprobe or J-Link:
 
-   1. Install `elf2uf2-rs`: `cargo install elf2uf2-rs`
-   2. Update `.cargo/config.toml`, use `elf2uf2` as the flashing tool
-      ```diff
-      - runner = "probe-rs run --chip RP2040"
-      + runner = "elf2uf2-rs -d"
-      ```
-   3. Connect your rp2040 board holding the BOOTSEL key, ensure that rp's USB drive appears
-   4. Flash
-      ```shell
-      cargo run --release
-      ```
-      Then, you will see logs like if everything goes right:
-      ```shell
-      Finished release [optimized + debuginfo] target(s) in 0.21s
-      Running `elf2uf2-rs -d 'target\thumbv6m-none-eabi\release\rmk-rp2040'`
-      Found pico uf2 disk G:\
-      Transfering program to pico
-      173.00 KB / 173.00 KB [=======================] 100.00 % 193.64 KB/s  
-      ```
+```bash
+cargo run --release
+```

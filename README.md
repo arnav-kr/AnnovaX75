@@ -7,7 +7,7 @@ A 75% Mechanical Keyboard, custom built from scratch.
 ## Features
 - 75% Exploded Layout
 - Cherry MX Brown Switches
-- QMK + VIA Firmware Support
+- RMK + Vial Firmware Support (Rust-based firmware with real-time Vial configuration)
 - Hot-swappable Sockets
 - Minimalist Sleek Design
 - Customizable Knob
