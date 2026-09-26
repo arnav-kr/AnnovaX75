@@ -28,7 +28,7 @@ insecure = false
 
 [storage]
 enabled = true
-clear_storage = true
+clear_storage = false
 
 [layout]
 rows = 6
