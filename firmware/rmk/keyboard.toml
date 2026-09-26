@@ -55,9 +55,9 @@ layers = 8
 keys = """
 Escape F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 Delete AudioMute
 Grave Kc1 Kc2 Kc3 Kc4 Kc5 Kc6 Kc7 Kc8 Kc9 Kc0 Minus Equal Backspace Home
-Tab Q W E R T Y U I O P LeftBracket RightBracket Backslash PageUp
-CapsLock A S D F G H J K L Semicolon Quote Enter PageDown
-LShift Z X C V B N M Comma Dot Slash RShift End Up
+Tab Q W E R T Y U I O P LeftBracket RightBracket Backslash End
+CapsLock A S D F G H J K L Semicolon Quote Enter PageUp
+LShift Z X C V B N M Comma Dot Slash RShift PageDown Up
 LCtrl LGui LAlt Space RAlt RCtrl MO(2) Left Down Right
 """
 encoders = [["AudioVolUp", "AudioVolDown"]]
